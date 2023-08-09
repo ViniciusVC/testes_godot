@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://ygem42mxcvlw"]
+
+[ext_resource type="Script" path="res://salvar_dados.gd" id="1_veyll"]
+
+[node name="salvar_dados" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_veyll")
+
+[node name="ButtonJson" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 71.0
+offset_right = 149.0
+offset_bottom = 113.0
+text = "SOMAR"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 455.0
+offset_bottom = 40.0
+text = "Gravando e lendo dados, em formato  JSON, em arquivo."
+
+[node name="LabelPontos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 45.0
+offset_right = 361.0
+offset_bottom = 78.0
+text = "pontos"
+
+[node name="LabelCapitulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 79.0
+offset_right = 361.0
+offset_bottom = 112.0
+text = "capitulo"
+
+[node name="LabelEtapa" type="Label" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 115.0
+offset_right = 361.0
+offset_bottom = 148.0
+text = "pontos"
+
+[connection signal="pressed" from="ButtonJson" to="." method="_on_button_json_pressed"]
